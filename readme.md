@@ -1,13 +1,14 @@
 Python Code to drive the Maplin/OWI USB Robot arm
 
   Tested on:
-  * Linux
+  * Raspbian 
+  * Linux 
   * OSX (Lion, Mountain Lion)
-  May work on Windows,.
+  May work on Windows.
 
 Requirements
 ============
-* Python 2.7 or 3.0
+* Python 2.7 or 3
 * Libusb
 * pyusb
 
@@ -15,7 +16,7 @@ Usage
 =====
 As a library:
 
-    >>> import arm
+    >>> import usb_arm
 
 To initialise libusb and the arm
 
