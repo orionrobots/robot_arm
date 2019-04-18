@@ -98,15 +98,12 @@ class Arm(object):
             if not isinstance(action[0], BitPattern):
                 raise ValueError("Not a valid action")
         #Do
-        try:
-            for action in actions:
-                if len(action) == 2:
-                    time = action[1]
-                else:
-                    time = 1
-                self.move(action[0], time)
-        finally:
-            self.move(Stop)
+        for action in actions:
+            if len(action) == 2:
+                time = action[1]
+            else:
+                time = 1
+            self.move(action[0], time)
 
 def makeGrabAndMove(baseDir):
 	return [[CloseGrips, 1.1],
@@ -116,5 +113,5 @@ def makeGrabAndMove(baseDir):
                 [OpenGrips]]
 
 blink = [[LedOn, 0.5], [Stop, 0.5]] * 3
-block_left = makeGrabAndMove(BaseClockWise, 0.4) + blink
-block_right = makeGrabAndMove(BaseCtrClockWise, 0.4) + blink
+block_left = makeGrabAndMove(BaseClockWise) + blink
+block_right = makeGrabAndMove(BaseCtrClockWise) + blink
