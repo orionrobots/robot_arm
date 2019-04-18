@@ -9,6 +9,15 @@ Python Code to drive the Maplin/OWI "Edge" USB Robot arm. The main respository f
   May work on Windows.
   * Windows 8 [Windows Help](windows_setup/help.md)
 
+Quick Raspberry Pi Installation
+===============================
+
+On a terminal at the Raspberry Pi enter these commands:
+
+    curl https://raw.githubusercontent.com/orionrobots/python_usb_robot_arm/master/setup_arm.sh | sudo bash
+
+I suggest review the setup_arm.sh script above to see what it does.
+
 Requirements
 ============
 * Python 2.7 or 3
