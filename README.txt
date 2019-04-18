@@ -2,13 +2,6 @@ Python Code to drive the Maplin/OWI "Edge" USB Robot arm. The main respository f
 
 [Video Demo](https://www.youtube.com/watch?v=dAvWBOTtGnU)
 
-  Tested on:
-  * Raspbian 
-  * Linux 
-  * OSX (Lion, Mountain Lion)
-  May work on Windows.
-  * Windows 8 [Windows Help](windows_setup/help.md)
-
 Quick Raspberry Pi Installation
 ===============================
 
@@ -18,8 +11,11 @@ On a terminal at the Raspberry Pi enter these commands:
 
 I suggest review the setup_arm.sh script above to see what it does.
 
-Requirements
-============
+Requirements for Other OS
+==========================
+
+This has previously been tested on Linux, OSX and Windows. OSX and Windows require signed drivers which may not easily be avialable.
+
 * Python 2.7 or 3
 * Libusb (on linux, mac or windows - http://sourceforge.net/projects/libusb-win32/files/latest/download) - the apt-get package will work.
 * pyusb via pip
