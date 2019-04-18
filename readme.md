@@ -1,16 +1,19 @@
 Python Code to drive the Maplin/OWI USB Robot arm
 
+[Video Demo](https://www.youtube.com/watch?v=dAvWBOTtGnU)
+
   Tested on:
   * Raspbian 
   * Linux 
   * OSX (Lion, Mountain Lion)
   May work on Windows.
+  * Windows 8 [Windows Help](windows_setup/help.md)
 
 Requirements
 ============
 * Python 2.7 or 3
-* Libusb
-* pyusb
+* Libusb (on linux, mac or windows - http://sourceforge.net/projects/libusb-win32/files/latest/download) - the apt-get package will work.
+* pyusb via pip
 
 Usage
 =====
@@ -53,6 +56,8 @@ BaseClockWise
 BaseCtrClockWise
 
 Stop
+
+LedOn
 
 Combining Movements
 -------------------
