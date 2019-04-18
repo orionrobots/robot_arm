@@ -127,14 +127,12 @@ License
 CC BY SA 3.0 - http://creativecommons.org/licenses/by-sa/3.0/
 Creative Commons By Attribution Share-Alike v3.0
 
-
-
 Related Work
 ============
 
 * The original reverse engineering of the UBS protocol was done by 
 [Vadim Zaliva](http://www.crocodile.org/lord/) and published on [his blog] (http://notbrainsurgery.livejournal.com/38622.html)
-* An alternative Objective-C control program is [here](https://armctrl.codeplex.com)
-* Maplin's product information on their [web site](http://www.maplin.co.uk/robotic-arm-kit-with-usb-pc-interface-266257)
-* OWI (manufacturer) information [here](http://www.owirobots.com/cart/catalog/OWI-535USB-ROBOTIC-ARM-KIT-with-USB-PC-INTERFACE-Assembled-103.html)
+* [An alternative Objective-C control program](https://armctrl.codeplex.com)
+* Device assembly manual https://www.robotshop.com/media/files/pdf/owi-535_manual.pdf
+* [OWI (manufacturer) information](http://www.owirobots.com/cart/catalog/OWI-535USB-ROBOTIC-ARM-KIT-with-USB-PC-INTERFACE-Assembled-103.html)
 

@@ -6,7 +6,7 @@ setup(
     packages=['usb_arm',],
     author="Danny Staple - Orionrobots",
     license='Creative Commons By Attribution Share-Alike v3.0',
-    long_description=open('readme.md').read(),
+    long_description=open('README.txt').read(),
     install_requires=[
         "pyusb"
     ]
