@@ -1,4 +1,4 @@
-Python Code to drive the Maplin/OWI "Edge" USB Robot arm. The main respository for this is https://github.com/orionrobots/python_usb_robot_arm.
+Python Code to drive the Maplin/OWI "Edge" USB Robot arm. The main repository for this is https://github.com/orionrobots/python_usb_robot_arm.
 
 [Video Demo](https://www.youtube.com/watch?v=dAvWBOTtGnU)
 
