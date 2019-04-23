@@ -111,6 +111,18 @@ There are a couple of canned actions already in the module:
     block_right
     left_and_blink
 
+An Example Script
+=================
+
+Using this in a python file couldn't be easier. For example you could put this in demo_arm.py:
+
+    import usb_arm
+    arm = usb_arm.Arm()
+    actions = [[usb_arm.ElbowDown, 0.5], [usb_arm.GripsClose, 0.5], [usb_arm.ElbowUp]]
+    arm.doActions(actions)
+    
+You can then run this with python3 demo_arm.py.
+
 Troubleshooting
 ===============
 
