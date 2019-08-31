@@ -1,16 +1,21 @@
-Python Code to drive the Maplin/OWI "Edge" USB Robot arm. The main respository for this is https://github.com/orionrobots/python_usb_robot_arm.
+Python Code to drive the Maplin/OWI "Edge" USB Robot arm. The main repository for this is https://github.com/orionrobots/python_usb_robot_arm.
 
 [Video Demo](https://www.youtube.com/watch?v=dAvWBOTtGnU)
 
-  Tested on:
-  * Raspbian 
-  * Linux 
-  * OSX (Lion, Mountain Lion)
-  May work on Windows.
-  * Windows 8 [Windows Help](windows_setup/help.md)
+Quick Raspberry Pi Installation
+===============================
 
-Requirements
-============
+On a terminal at the Raspberry Pi enter these commands:
+
+    curl https://raw.githubusercontent.com/orionrobots/python_usb_robot_arm/master/setup_arm.sh | sudo bash
+
+I suggest review the setup_arm.sh script above to see what it does.
+
+Requirements for Other OS
+==========================
+
+This has previously been tested on Linux, OSX and Windows. OSX and Windows require signed drivers which may not easily be avialable.
+
 * Python 2.7 or 3
 * Libusb (on linux, mac or windows - http://sourceforge.net/projects/libusb-win32/files/latest/download) - the apt-get package will work.
 * pyusb via pip
@@ -106,6 +111,18 @@ There are a couple of canned actions already in the module:
     block_right
     left_and_blink
 
+An Example Script
+=================
+
+Using this in a python file couldn't be easier. For example you could put this in demo_arm.py:
+
+    import usb_arm
+    arm = usb_arm.Arm()
+    actions = [[usb_arm.ElbowDown, 0.5], [usb_arm.GripsClose, 0.5], [usb_arm.ElbowUp]]
+    arm.doActions(actions)
+    
+You can then run this with python3 demo_arm.py.
+
 Troubleshooting
 ===============
 
@@ -127,14 +144,12 @@ License
 CC BY SA 3.0 - http://creativecommons.org/licenses/by-sa/3.0/
 Creative Commons By Attribution Share-Alike v3.0
 
-
-
 Related Work
 ============
 
 * The original reverse engineering of the UBS protocol was done by 
 [Vadim Zaliva](http://www.crocodile.org/lord/) and published on [his blog] (http://notbrainsurgery.livejournal.com/38622.html)
-* An alternative Objective-C control program is [here](https://armctrl.codeplex.com)
-* Maplin's product information on their [web site](http://www.maplin.co.uk/robotic-arm-kit-with-usb-pc-interface-266257)
-* OWI (manufacturer) information [here](http://www.owirobots.com/cart/catalog/OWI-535USB-ROBOTIC-ARM-KIT-with-USB-PC-INTERFACE-Assembled-103.html)
+* [An alternative Objective-C control program](https://armctrl.codeplex.com)
+* Device assembly manual https://www.robotshop.com/media/files/pdf/owi-535_manual.pdf
+* [OWI (manufacturer) information](http://www.owirobots.com/cart/catalog/OWI-535USB-ROBOTIC-ARM-KIT-with-USB-PC-INTERFACE-Assembled-103.html)
 
